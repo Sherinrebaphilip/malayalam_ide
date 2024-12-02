@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/62942298-1b0e-40c6-9b4c-e45d0ed66b92)
+![image](https://github.com/user-attachments/assets/223285df-bc34-495f-a01d-47e96cfb0794)
+
 
 
 Welcome to the Malayalam IDE! This project is an innovative platform designed to allow programmers, learners, and enthusiasts to write and execute code entirely in Malayalam, making technology more inclusive and accessible to everyone who dreams of coding in their native language.
