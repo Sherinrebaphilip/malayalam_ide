@@ -1,0 +1,325 @@
+{% extends "ide/base.html" %}
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background-color: white;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #008080;
+        color: white;
+        font-size: 18px;
+    }
+
+    td {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    .back-link {
+        margin-top: 20px;
+        display: inline-block;
+        text-decoration: none;
+        color: #008080;
+        font-weight: bold;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 style="font-weight: 50px;">Supported Malayalam Keywords</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>English Equivalent</th>
+                <th>Malayalam Keyword</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>def</td>
+                <td>നിർവചിക്കുക</td>
+            </tr>
+            <tr>
+                <td>print</td>
+                <td>അച്ചടിക്കുക</td>
+            </tr>
+            <tr>
+                <td>import</td>
+                <td>ഇറക്കുമതി</td>
+            </tr>
+            <tr>
+                <td>class</td>
+                <td>ക്ലാസ്</td>
+            </tr>
+            <tr>
+                <td>if</td>
+                <td>എന്നാൽ</td>
+            </tr>
+            <tr>
+                <td>else</td>
+                <td>അല്ലെങ്കിൽ</td>
+            </tr>
+            <tr>
+                <td>while</td>
+                <td>സമയത്ത്</td>
+            </tr>
+            <tr>
+                <td>for</td>
+                <td>വേണ്ടി</td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>ൽ</td>
+            </tr>
+            <tr>
+                <td>range</td>
+                <td>പരിധി</td>
+            </tr>
+            <tr>
+                <td>or</td>
+                <td>അഥവാ</td>
+            </tr>
+            <tr>
+                <td>and</td>
+                <td>ഒപ്പം</td>
+            </tr>
+
+            <tr>
+                <td>False</td>
+                <td>തെറ്റാണ്</td>
+            </tr>
+            <tr>
+                <td>None</td>
+                <td>ഒന്നുമില്ല</td>
+            </tr>
+            <tr>
+                <td>True</td>
+                <td>സത്യമാണ്</td>
+            </tr>
+            <tr>
+                <td>as</td>
+                <td>എന്ന</td>
+            </tr>
+            <tr>
+                <td>assert</td>
+                <td>ഉറപ്പിക്കുക</td>
+            </tr>
+            <tr>
+                <td>async</td>
+                <td>അസിങ്ക്</td>
+            </tr>
+            <tr>
+                <td>await</td>
+                <td>കാത്തിരിക്കുക</td>
+            </tr>
+            <tr>
+                <td>break</td>
+                <td>തകർക്കുക</td>
+            </tr>
+            <tr>
+                <td>continue</td>
+                <td>തുടരുക</td>
+            </tr>
+            <tr>
+            <tr>
+                <td>del</td>
+                <td>മാറ്റുക</td>
+            </tr>
+            <tr>
+                <td>elif</td>
+                <td>അല്ലെങ്കിൽ</td>
+            </tr>
+            <tr>
+                <td>else</td>
+                <td>അല്ലെങ്കിൽ</td>
+            </tr>
+            <tr>
+                <td>except</td>
+                <td>ഒഴികെ</td>
+            </tr>
+            <tr>
+                <td>finally</td>
+                <td>അവസാനമായി</td>
+            </tr>
+            <tr>
+                <td>from</td>
+                <td>നിന്ന്</td>
+            </tr>
+            <tr>
+                <td>global</td>
+                <td>ആഗോള</td>
+            </tr>
+            <tr>
+            <tr>
+                <td>import</td>
+                <td>ഇറക്കുമതി</td>
+            </tr>
+            <tr>
+            <tr>
+                <td>is</td>
+                <td>ആണ്</td>
+            </tr>
+            <tr>
+                <td>lambda</td>
+                <td>ലാംഡ</td>
+            </tr>
+            <tr>
+                <td>nonlocal</td>
+                <td>പ്രാദേശികമല്ല</td>
+            </tr>
+            <tr>
+                <td>not</td>
+                <td>അല്ല</td>
+            </tr>
+            <tr>
+            <tr>
+                <td>pass</td>
+                <td>കടക്കുക</td>
+            </tr>
+            <tr>
+                <td>raise</td>
+                <td>ഉയർത്തുക</td>
+            </tr>
+            <tr>
+                <td>return</td>
+                <td>മടങ്ങുക</td>
+            </tr>
+            <tr>
+                <td>try</td>
+                <td>ശ്രമിക്കുക</td>
+            </tr>
+            <tr>
+            <tr>
+                <td>with</td>
+                <td>കൂടെ</td>
+            </tr>
+            <tr>
+                <td>yield</td>
+                <td>ഉത്പാദനം</td>
+            </tr>
+            <tr>
+                <td>abs()</td>
+                <td>അബ്സോല്യൂട്ട്()</td>
+            </tr>
+            <tr>
+                <td>all()</td>
+                <td>എല്ലാം()</td>
+            </tr>
+            <tr>
+                <td>any()</td>
+                <td>ഏതെങ്കിലും()</td>
+            </tr>
+            <tr>
+                <td>bin()</td>
+                <td>ബൈനറി()</td>
+            </tr>
+            <tr>
+                <td>bool()</td>
+                <td>ബൂൾ()</td>
+            </tr>
+            <tr>
+                <td>bytes()</td>
+                <td>ബൈറ്റുകൾ()</td>
+            </tr>
+            <tr>
+                <td>chr()</td>
+                <td>സ്വഭാവം()</td>
+            </tr>
+            <tr>
+                <td>dict()</td>
+                <td>നിഘണ്ടു()</td>
+            </tr>
+            <tr>
+                <td>float()</td>
+                <td>ഫ്ലോട്ടുകൾ()</td>
+            </tr>
+            <tr>
+                <td>int()</td>
+                <td>പൂർണ്ണസംഖ്യ()</td>
+            </tr>
+            <tr>
+                <td>len()</td>
+                <td>നീളം()</td>
+            </tr>
+            <tr>
+                <td>list()</td>
+                <td>പട്ടിക()</td>
+            </tr>
+            <tr>
+                <td>max()</td>
+                <td>പരമാവധി()</td>
+            </tr>
+            <tr>
+                <td>min()</td>
+                <td>കുറഞ്ഞത്()</td>
+            </tr>
+            <tr>
+            <tr>
+                <td>set()</td>
+                <td>സജ്ജീകരിക്കുക()</td>
+            </tr>
+            <tr>
+                <td>str()</td>
+                <td>നാഴികക്കല്ല്()</td>
+            </tr>
+            <tr>
+                <td>sum()</td>
+                <td>ആകെയുള്ളത്()</td>
+            </tr>
+            <tr>
+                <td>tuple()</td>
+                <td>ട്യൂപിള്()</td>
+            </tr>
+            <tr>
+                <td>zip()</td>
+                <td>സിപ്()</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</div>
+{% endblock content %}

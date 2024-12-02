@@ -1,0 +1,151 @@
+{% extends "ide/base.html" %}
+
+{% block title %}Malayalam IDE - Intro{% endblock %}
+
+{% block content %}
+<div class="intro-container">
+    <h2>Instructions for Using the Malayalam Python IDE</h2>
+    <p class="intro-text">
+        Welcome to the Malayalam Python IDE! This platform allows you to write Python code using Malayalam keywords. 
+        It aims to make programming more accessible to Malayalam-speaking users by providing a localized coding experience.
+    </p>
+
+    <div class="section">
+        <h3>How to Use the IDE:</h3>
+        <ol class="instruction-list">
+            <li><strong>Register or Login:</strong> Start by registering for an account or logging in if you already have an account.</li>
+            <li><strong>Write Code:</strong> On the IDE page, you can write Python code using Malayalam keywords. Use the editor on the left-hand side of the page.</li>
+            <li><strong>Run Code:</strong> Click the "Run" button to execute your code. The output will be displayed on the right-hand side of the page.</li>
+            
+        </ol>
+    </div>
+
+
+
+    <div class="section">
+        <h3>Example Code:</h3>
+        <div class="example-code">
+<pre>
+<code>
+നിർവചിക്കുക സ്വാഗതം():
+    അച്ചടിക്കുക("സ്വാഗതം, മലയാളം IDE!")
+
+സ്വാഗതം()
+</code>
+</pre>
+        </div>
+    </div>
+
+    <div class="section notes-section">
+        <h3>Notes:</h3>
+        <ul class="notes-list">
+            <li>Ensure proper indentation as Python is indentation-sensitive.</li>
+            <li>If you encounter errors, verify your syntax and Malayalam keywords.</li>
+            <li>Use the Run button to test your code instantly.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .intro-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #008080;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .intro-text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        color: #333;
+        font-size: 22px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #008080;
+        padding-bottom: 5px;
+    }
+
+    .instruction-list {
+        list-style-type: decimal;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .instruction-list li {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .keywords-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .keywords-table th,
+    .keywords-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .keywords-table th {
+        background-color: #008080;
+        color: white;
+        font-size: 16px;
+    }
+
+    .keywords-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .keywords-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .example-code {
+        background-color: #f4f4f4;
+        border-left: 5px solid #008080;
+        padding: 15px;
+        font-family: Consolas, monospace;
+        color: #333;
+    }
+
+    .notes-section {
+        background-color: #fff8e5;
+        border: 1px solid #ffd966;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .notes-list {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .notes-list li {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 5px;
+    }
+</style>
+{% endblock content %}

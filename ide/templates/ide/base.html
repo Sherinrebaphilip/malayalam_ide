@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Malayalam IDE{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background-color: #2e4848;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .navbar .left, .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .right a, .navbar .left a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar .right a:hover, .navbar .left a:hover {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .navbar button {
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2e4848;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px; /* Added margin to create spacing between buttons */
+        }
+
+        .navbar button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar button:hover {
+            background-color: #4b8864;
+        }
+
+        .navbar .right a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #2e4848;
+            text-align: center;
+        }
+
+        .navbar .right a:hover {
+            background-color: #4b8864;
+        }
+
+        .navbar .right a:last-child {
+            background-color: #2e4848;
+        }
+
+        .navbar .right a:last-child:hover {
+            background-color: #4b8864;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Malayalam IDE</h1>
+        <div class="left">
+            <a href="/">Home</a>
+            <a href="/intro">Intro</a>
+            <a href="/keywords">Keywords</a>
+            {% if user.is_authenticated %}
+                <a href="/ide">IDE</a>
+            {% endif %}
+        </div>
+        <div class="right">
+            {% if user.is_authenticated %}
+                <a href="/logout">Logout</a>
+            {% else %}
+                <a href="/register">Register</a>
+                <a href="/login">Login</a>
+            {% endif %}
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
